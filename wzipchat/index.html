@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WZipChat | Read WhatsApp chat exports on Android</title>
+<meta name="description" content="WZipChat opens WhatsApp chat export ZIP files on Android. Read chats, browse media, search, and save as PDF. Your chats stay on your device.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0d0a1c">
+<meta property="og:image" content="https://vyshnav161.github.io/logo.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="progress"></div>
+<div class="bg"><div class="sheen"></div><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="grain"></div></div>
+<header class="hero" id="top-of-page" style="min-height:auto;padding-top:70px">
+<div class="wrap">
+  <div>
+    <span class="pill"><i class="dot"></i> Android app &middot; Google Play</span>
+    <h1><span class="grad">WZipChat</span><br>Read WhatsApp exports like a chat.</h1>
+    <p class="lead">Open a WhatsApp chat export on your phone and read it as a normal conversation. Browse photos, videos, audio and documents, search messages, and save the chat as a PDF. Everything happens on your device.</p>
+    <span class="tag">Android</span><span class="tag">Works offline</span><span class="tag">Free, optional ad removal</span><br>
+    <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.wolfex161.wzipchat">Download on Google Play</a>
+    <a class="btn ghost" href="/wzipchat/privacy.html">Privacy policy</a>
+  </div>
+  <div class="phone-wrap">
+    <div class="phone" id="phone">
+      <div class="screen">
+        <div class="bar"><div class="av"></div>WZipChat</div>
+        <div class="msgs">
+          <div class="m in">Did you export the chat?<small>10:02</small></div>
+          <div class="m out">Yes, with media<small>10:03</small></div>
+          <div class="m in"><div class="img"></div>Trip photos<small>10:03</small></div>
+          <div class="m out">Opening it in WZipChat now<small>10:04</small></div>
+          <div class="m in">Nice, it all shows up<small>10:05</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+<main>
+<section><div class="wrap">
+  <div class="reveal"><span class="eyebrow">Features</span><h2>Everything in your exported chat, readable.</h2></div>
+  <p class="sub reveal" style="--d:.1s">A WhatsApp export is a text file and a pile of media. WZipChat turns it back into a conversation.</p>
+  <div class="grid">
+    <div class="card tilt reveal" style="--d:.0s"><div class="icon">&#128172;</div><h4>Chat view</h4><p>Messages with timestamps and senders in a familiar WhatsApp-style layout. Links are tappable.</p></div>
+    <div class="card tilt reveal" style="--d:.1s"><div class="icon">&#128444;</div><h4>Media browser</h4><p>Images, videos, audio and documents sorted by type, with in-app preview.</p></div>
+    <div class="card tilt reveal" style="--d:.2s"><div class="icon">&#128269;</div><h4>Search</h4><p>Find messages by text, sender or media name.</p></div>
+    <div class="card tilt reveal" style="--d:.3s"><div class="icon">&#128196;</div><h4>PDF export</h4><p>Save a chat as a PDF to keep or share.</p></div>
+    <div class="card tilt reveal" style="--d:.4s"><div class="icon">&#128190;</div><h4>Save media</h4><p>Download photos, videos and files from the chat to your device.</p></div>
+    <div class="card tilt reveal" style="--d:.5s"><div class="icon">&#128274;</div><h4>Private by design</h4><p>Your chats are read on your device and are never uploaded.</p></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <div class="reveal"><span class="eyebrow">How it works</span><h2>Three steps</h2></div>
+  <div class="steps" style="margin-top:24px">
+    <div class="step reveal left"><div><b>Export a chat in WhatsApp</b><span>Open the chat, tap More, then Export chat, and choose Include media.</span></div></div>
+    <div class="step reveal right" style="--d:.1s"><div><b>Open the ZIP in WZipChat</b><span>Tap import and pick the exported file.</span></div></div>
+    <div class="step reveal left" style="--d:.2s"><div><b>Read, search and save</b><span>Scroll through the chat, open media, and download what you need.</span></div></div>
+  </div>
+</div></section>
+
+<section id="built"><div class="wrap">
+  <div class="reveal"><span class="eyebrow">Under the hood</span><h2>Built with Flutter</h2></div>
+  <p class="sub reveal" style="--d:.1s">A personal project I designed, built and published myself.</p>
+  <div class="chips reveal" style="--d:.15s"><span>Flutter</span><span>Dart</span><span>Provider</span><span>ZIP extraction</span><span>File parsing</span><span>Video and audio preview</span><span>PDF generation</span></div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="reveal"><span class="eyebrow">FAQ</span><h2>Common questions</h2></div>
+  <div style="margin-top:24px">
+    <details class="faq reveal"><summary>Does the app upload my chats?</summary><p>No. The export is read and processed on your device. Your messages and media are not sent to any server of mine.</p></details>
+    <details class="faq reveal" style="--d:.05s"><summary>Does it need the internet?</summary><p>Reading a chat does not. The free version connects to the internet to show ads, and Google Play uses it for the ad-removal purchase.</p></details>
+    <details class="faq reveal" style="--d:.1s"><summary>How do I remove the ads?</summary><p>There is a one-time "Remove ads" purchase in the app. You pay once through Google Play, and you can restore it on a new device with "Restore purchase".</p></details>
+    <details class="faq reveal" style="--d:.15s"><summary>Which files can I open?</summary><p>The ZIP file that WhatsApp creates with "Export chat". Choose "Include media" if you want photos, videos, audio and documents.</p></details>
+    <details class="faq reveal" style="--d:.2s"><summary>Is it affiliated with WhatsApp?</summary><p>No. WZipChat is an independent app and is not affiliated with or endorsed by WhatsApp or Meta.</p></details>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="cta reveal">
+    <span class="eyebrow">Get the app</span>
+    <h2>Try WZipChat</h2>
+    <p class="sub">Free on Google Play. Questions or feedback are welcome.</p>
+    <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.wolfex161.wzipchat">Download on Google Play</a>
+    <a class="btn ghost" href="mailto:vyshnav.897462@gmail.com">Email me</a>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <a href="/">Vyshnav Aju</a>
+  <a href="/wzipchat/">WZipChat</a>
+  <a href="/wzipchat/privacy.html">Privacy Policy</a>
+  <a href="https://github.com/Vyshnav161/Whatsapp_zip_reader">WZipChat on GitHub</a>
+  <div style="margin-top:12px">WZipChat is not affiliated with or endorsed by WhatsApp or Meta.</div>
+</div></footer>
+<button id="top" aria-label="Back to top">&uarr;</button>
+<script src="/script.js"></script>
+</body>
+</html>

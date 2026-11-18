@@ -162,3 +162,7 @@ footer a:hover{color:var(--a1)}
   .m{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
+
+.app-card{display:flex;gap:20px;align-items:center;max-width:720px;color:inherit}
+.app-card .icon{margin:0;flex:none;width:56px;height:56px;font-size:1.6rem}
+@media(max-width:560px){.app-card{flex-direction:column;align-items:flex-start}}
