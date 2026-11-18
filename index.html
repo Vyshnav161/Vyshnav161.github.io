@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vyshnav Aju | Flutter Developer</title>
-<meta name="description" content="Flutter developer from Kerala, India. Apps include WZipChat, a WhatsApp chat export reader.">
+<title>Vyshnav Aju | Android (Flutter) and C# Developer</title>
+<meta name="description" content="Vyshnav Aju: Android (Flutter) and C# developer from Kerala, India. Healthcare software, medical machine integration, and the WZipChat app.">
 <link rel="icon" href="icon.webp">
 <style>
 :root{--bg:#0b1415;--card:#122022;--line:#1f3336;--text:#e8f1f0;--muted:#9bb3b0;--green:#25D366;--teal:#128C7E}
@@ -40,6 +40,16 @@ h2{font-size:1.5rem;margin:0 0 6px}
 .steps div{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px 16px 58px;position:relative}
 .steps div::before{content:counter(s);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:700}
 .skills span{display:inline-block;margin:0 8px 8px 0;padding:6px 14px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.92rem}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.proj .card h4{font-size:1.05rem;margin-bottom:4px}
+.proj .cat{color:var(--green);font-size:.8rem;margin-bottom:8px;display:block}
+.chips{margin-top:12px}
+.chips span{display:inline-block;font-size:.75rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 10px;margin:0 6px 6px 0}
+.job{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.job h4{margin:0}
+.job .when{color:var(--muted);font-size:.9rem;margin-bottom:10px;display:block}
+.job ul{margin:0;padding-left:20px;color:var(--muted)}
+.job li{margin-bottom:6px}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
 footer a{margin-right:18px}
 </style>
@@ -48,15 +58,15 @@ footer a{margin-right:18px}
 <div class="wrap">
 <nav>
   <div class="brand">Vyshnav Aju</div>
-  <div><a href="#apps">Apps</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  <div><a href="#about">About</a><a href="#apps">Apps</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
 </nav>
 </div>
 
 <header class="hero">
 <div class="wrap">
-  <h1>I build <span>fast, private</span> mobile apps with Flutter.</h1>
-  <p>Developer from Kerala, India. I make useful apps that do their job on your device and keep your data with you.</p>
-  <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.wolfex161.wzipchat">Get WZipChat on Google Play</a>
+  <h1>Hi, I'm Vyshnav Aju.<br><span>Android (Flutter) and C# developer.</span></h1>
+  <p>I build healthcare software, connect medical machines to hospital systems, and make mobile apps that put users first. Based in Kerala, India.</p>
+  <a class="btn primary" href="#projects">See my work</a>
   <a class="btn ghost" href="#contact">Get in touch</a>
 </div>
 </header>
@@ -64,7 +74,7 @@ footer a{margin-right:18px}
 <main class="wrap">
 <section id="apps">
   <h2>Apps</h2>
-  <p class="sub">Published on Google Play.</p>
+  <p class="sub">My app on Google Play.</p>
   <div class="featured">
     <img src="icon.webp" alt="WZipChat app icon">
     <div class="info">
@@ -85,6 +95,54 @@ footer a{margin-right:18px}
   </div>
 </section>
 
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="sub">Work from my job and personal projects.</p>
+  <div class="proj">
+    <div class="card"><h4>Doctor Task App (HODO Doctor Console)</h4><span class="cat">Mobile application / Healthcare IT</span>
+      <p>Cross-platform mobile EMR app for physicians to manage consultations, documentation and care workflows on the go.</p>
+      <div class="chips"><span>Flutter</span><span>Dart</span><span>Provider</span><span>SQLite</span><span>JWT</span><span>Biometrics</span><span>QR scanning</span><span>fl_chart</span></div></div>
+    <div class="card"><h4>Patient App and Famedico enhancements</h4><span class="cat">Mobile application development</span>
+      <p>Streamlined appointment booking in the Patient App and added home appointment services through packages in Famedico.</p>
+      <div class="chips"><span>Flutter</span><span>Dart</span><span>Mobile UI/UX</span><span>API integration</span></div></div>
+    <div class="card"><h4>Machine integration (LabService)</h4><span class="cat">Software integration / Healthcare</span>
+      <p>C# LabService software that interfaces with medical machines and sends their data directly to the main EMR system.</p>
+      <div class="chips"><span>C#</span><span>.NET</span><span>Serial communication</span><span>HL7/ASTM (conceptual)</span></div></div>
+    <div class="card"><h4>WZipChat</h4><span class="cat">Personal project / Utility tool</span>
+      <p>Parses and displays WhatsApp chat exports, including chats, media and voice notes. Published on Google Play.</p>
+      <div class="chips"><span>Flutter</span><span>Dart</span><span>File parsing</span><span>Data extraction</span><span>UI/UX design</span></div></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Work experience</h2>
+  <p class="sub">&nbsp;</p>
+  <div class="job">
+    <h4>Software Developer</h4>
+    <span class="when">HODO Medical Informatic Solutions Pvt. Ltd. &middot; July 2022 to present</span>
+    <ul>
+      <li>Began as a junior developer working in PHP, creating new pages and changing existing features of the main software.</li>
+      <li>Moved to C# in November 2022 for medical machine integration, implementing and customizing software for clients based on their medical equipment.</li>
+      <li>Expanded into Android (Flutter) development from July 2024, building patient-facing apps for hospital and home appointment booking.</li>
+      <li>Worked on changes and improvements to the existing Famedico app (Flutter).</li>
+    </ul>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <p class="sub">&nbsp;</p>
+  <div class="job">
+    <h4>B.Tech, Electronics and Communication</h4>
+    <span class="when">Younus College of Engineering and Technology, Pallimukku, Kollam &middot; 2018 to 2022</span>
+  </div>
+  <h2 style="margin-top:28px">Certifications</h2>
+  <div class="grid">
+    <div class="card"><h4>Windows Service Programming, Debugging, Installing in C# .NET</h4><p>Udemy, February 2024</p></div>
+    <div class="card"><h4>TCP/IP Socket Programming in C# .NET for Coders and Students</h4><p>Udemy, July 2023</p></div>
+  </div>
+</section>
+
 <section>
   <h2>How WZipChat works</h2>
   <p class="sub">Three steps.</p>
@@ -97,13 +155,19 @@ footer a{margin-right:18px}
 
 <section id="about">
   <h2>About</h2>
-  <p class="sub">I'm Vyshnav, a Flutter developer working on mobile apps for Android. I like small, focused tools with clean interfaces that respect user privacy.</p>
-  <div class="skills"><span>Flutter</span><span>Dart</span><span>Android</span><span>Provider</span><span>Google Play publishing</span><span>On-device processing</span></div>
+  <p class="sub">I'm a dedicated developer with strong expertise in Android development using Flutter (Dart) and in C# for desktop and service applications, including medical machine integration. I also have experience with PHP for web development. I'm passionate about user-centric applications and about integrating software with hardware. I work well in teams, like learning new skills, and enjoy hard problems. My goal is to contribute to meaningful projects that make a positive impact.</p>
+  <h2 style="margin-top:28px">Skills</h2>
+  <div class="grid">
+    <div class="card"><h4>Flutter and Dart</h4><p>Mobile</p></div>
+    <div class="card"><h4>C#</h4><p>Backend and desktop</p></div>
+    <div class="card"><h4>PHP</h4><p>Backend</p></div>
+    <div class="card"><h4>UI/UX design principles</h4><p>Design</p></div>
+  </div>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
-  <p class="sub">Feedback, bug reports or work enquiries:</p>
+  <h2>Let's connect</h2>
+  <p class="sub">I'm open to new projects, ideas and opportunities to be part of your vision.</p>
   <a class="btn primary" href="mailto:vyshnav.897462@gmail.com">vyshnav.897462@gmail.com</a>
   <a class="btn ghost" href="https://github.com/Vyshnav161">GitHub</a>
 </section>
