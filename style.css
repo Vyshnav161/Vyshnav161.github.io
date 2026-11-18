@@ -310,3 +310,17 @@ main{overflow-x:clip}
 }
 
 .phone:hover{animation-play-state:paused}
+
+/* brand */
+nav .brand{position:relative;z-index:1;display:flex;align-items:center;gap:8px;padding:2px 14px 2px 4px;margin-right:4px;border-right:1px solid var(--line);color:#fff}
+nav .brand img{width:28px;height:28px;border-radius:8px;display:block;transition:transform .4s}
+nav .brand:hover img{transform:rotate(-8deg) scale(1.08)}
+nav .brand span{font-weight:800;letter-spacing:-.01em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fbrand{display:flex!important;align-items:center;gap:12px;margin:0 0 18px!important;color:var(--text)}
+.fbrand img{width:34px;height:34px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.4),0 0 0 1px rgba(255,255,255,.1)}
+.fbrand b{display:block;font-size:1rem;letter-spacing:-.01em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;width:max-content}
+@media(max-width:820px){nav .brand span{display:none}nav .brand{padding-right:10px}}
+
+nav>*{flex:none}
+nav .brand img{flex:none}
+.fbrand img{flex:none}
