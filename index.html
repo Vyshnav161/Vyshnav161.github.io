@@ -20,15 +20,15 @@
   <a href="#home" class="active">Home</a>
   <a href="#about">About</a>
   <a href="#projects">Projects</a>
-  <a href="#experience">Experience</a>
   <a href="#apps">Apps</a>
+  <a href="#experience">Experience</a>
   <a href="#contact">Contact</a>
 </nav>
 <header class="hero" id="home">
 <div class="wrap">
   <div>
     <span class="pill"><i class="dot"></i> Open to new projects</span>
-    <h1>Hi, I'm <span class="grad">Vyshnav Aju.</span><br>I build <span class="typed" id="typed"></span></h1>
+    <h1><span class="hi">Hi, I'm</span><span class="grad">Vyshnav Aju.</span><span class="role">I build <span class="typed" id="typed"></span></span></h1>
     <p class="lead">Android (Flutter) and C# developer from Kerala, India. I build healthcare software, connect medical machines to hospital systems, and make mobile apps that put users first.</p>
     <a class="btn primary" href="#projects">See my work &rarr;</a>
     <a class="btn ghost" href="#apps">My apps</a>
@@ -36,8 +36,8 @@
   </div>
   <div class="orbit-wrap">
     <div class="orbit">
-      <div class="ring"><span>Flutter</span><span>Dart</span><span>C#</span><span>PHP</span></div>
-      <div class="ring r2"><span>.NET</span><span>SQLite</span><span>REST</span><span>UI/UX</span></div>
+      <div class="ring" style="--r:190px"><i style="--a:-90deg"><b>Flutter</b></i><i style="--a:0deg"><b>Dart</b></i><i style="--a:90deg"><b>C#</b></i><i style="--a:180deg"><b>PHP</b></i></div>
+      <div class="ring r2" style="--r:126px"><i style="--a:-45deg"><b>.NET</b></i><i style="--a:45deg"><b>SQLite</b></i><i style="--a:135deg"><b>REST</b></i><i style="--a:225deg"><b>UI/UX</b></i></div>
       <div class="core">VA</div>
     </div>
   </div>
@@ -47,12 +47,14 @@
 <main>
 <section id="about"><div class="wrap">
   <div class="reveal"><span class="eyebrow">About</span><h2>Software that connects people, devices and data.</h2></div>
-  <p class="sub reveal" style="--d:.1s">I'm a developer with strong expertise in Android development using Flutter (Dart) and in C# for desktop and service applications, including medical machine integration. I also have experience with PHP for web development. I'm passionate about user-centric applications and about integrating software with hardware. I work well in teams, like learning new skills, and enjoy hard problems. My goal is to contribute to meaningful projects that make a positive impact.</p>
-  <div class="grid">
-    <div class="card tilt reveal" style="--d:.0s"><div class="icon">&#128241;</div><h4>Flutter and Dart</h4><p>Mobile</p></div>
-    <div class="card tilt reveal" style="--d:.1s"><div class="icon">&#9881;</div><h4>C#</h4><p>Backend and desktop</p></div>
-    <div class="card tilt reveal" style="--d:.2s"><div class="icon">&#127760;</div><h4>PHP</h4><p>Backend</p></div>
-    <div class="card tilt reveal" style="--d:.3s"><div class="icon">&#127912;</div><h4>UI/UX design principles</h4><p>Design</p></div>
+  <div class="about-grid">
+  <p class="about-text reveal" style="--d:.1s">I'm a developer with strong expertise in Android development using Flutter (Dart) and in C# for desktop and service applications, including medical machine integration. I also have experience with PHP for web development. I'm passionate about user-centric applications and about integrating software with hardware. I work well in teams, like learning new skills, and enjoy hard problems. My goal is to contribute to meaningful projects that make a positive impact.</p>
+  <div class="grid two">
+    <div class="card tilt reveal" style="--d:.0s"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h4>Flutter and Dart</h4><p>Mobile</p></div>
+    <div class="card tilt reveal" style="--d:.1s"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></div><h4>C#</h4><p>Backend and desktop</p></div>
+    <div class="card tilt reveal" style="--d:.2s"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><h4>PHP</h4><p>Backend</p></div>
+    <div class="card tilt reveal" style="--d:.3s"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></div><h4>UI/UX design principles</h4><p>Design</p></div>
+  </div>
   </div>
 </div></section>
 
@@ -79,14 +81,16 @@
 <section id="apps"><div class="wrap">
   <div class="reveal"><span class="eyebrow">Apps</span><h2>Apps I've published</h2></div>
   <p class="sub reveal" style="--d:.1s">Available on Google Play.</p>
-  <a class="card tilt reveal app-card" style="--d:.15s" href="/wzipchat/">
-    <div class="icon">&#128172;</div>
+  <div class="featured reveal" style="--d:.15s">
+    <img class="appicon" src="/wzipchat/app-icon.webp" alt="WZipChat app icon" width="104" height="104">
     <div>
-      <h4>WZipChat</h4>
+      <h3>WZipChat</h3>
+      <span class="tag">Android</span><span class="tag">Works offline</span><span class="tag">Free</span>
       <p>Open a WhatsApp chat export on Android and read it like a normal chat. Browse media, search, and save as PDF. Chats stay on your device.</p>
-      <span class="more">Open the app page &rarr;</span>
+      <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.wolfex161.wzipchat">Get it on Google Play</a>
+      <a class="btn ghost" href="/wzipchat/">About the app</a>
     </div>
-  </a>
+  </div>
 </div></section>
 
 <section id="experience"><div class="wrap">
