@@ -324,3 +324,7 @@ nav .brand span{font-weight:800;letter-spacing:-.01em;background:var(--grad);-we
 nav>*{flex:none}
 nav .brand img{flex:none}
 .fbrand img{flex:none}
+
+/* hero core = brand mark */
+.orbit .core{background:radial-gradient(circle at 50% 38%,#33206f,#0f0a2b 72%);border:1.5px solid rgba(167,139,250,.55);box-shadow:0 0 70px rgba(167,139,250,.5),inset 0 0 36px rgba(167,139,250,.28);padding:0}
+.orbit .core svg{width:100%;height:100%;display:block;filter:drop-shadow(0 4px 14px rgba(167,139,250,.45))}
