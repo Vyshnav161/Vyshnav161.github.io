@@ -158,7 +158,7 @@
       if(!d.hidden){
         gx+=(tx-gx)*.08;gy+=(ty-gy)*.08;rx+=(tx-rx)*.22;ry+=(ty-ry)*.22;
         g.style.transform='translate3d('+(gx-260)+'px,'+(gy-260)+'px,0)';
-        r.style.transform='translate3d('+(rx-18)+'px,'+(ry-18)+'px,0)';
+        r.style.transform='translate3d('+(rx-10)+'px,'+(ry-10)+'px,0)';
       }
       requestAnimationFrame(loop);
     })();

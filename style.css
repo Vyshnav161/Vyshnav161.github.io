@@ -21,8 +21,8 @@ img{max-width:100%}
 .grain{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:30px 30px;mask-image:radial-gradient(ellipse at 50% 15%,#000,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 15%,#000,transparent 75%)}
 #fx{position:fixed;inset:0;z-index:0;pointer-events:none}
 #glow{position:fixed;left:0;top:0;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(167,139,250,.24),rgba(255,143,199,.1) 42%,transparent 70%);pointer-events:none;z-index:0;opacity:0;transition:opacity .5s;will-change:transform}
-#ring{position:fixed;left:0;top:0;width:36px;height:36px;border:1.5px solid rgba(255,143,199,.75);border-radius:50%;pointer-events:none;z-index:250;opacity:0;transition:width .25s,height .25s,margin .25s,background .25s,opacity .3s;will-change:transform}
-#ring.big{width:66px;height:66px;margin:-15px 0 0 -15px;background:rgba(167,139,250,.14);border-color:rgba(92,200,255,.8)}
+#ring{position:fixed;left:0;top:0;width:20px;height:20px;border:1.5px solid rgba(255,143,199,.75);border-radius:50%;pointer-events:none;z-index:250;opacity:0;transition:width .25s,height .25s,margin .25s,background .25s,opacity .3s;will-change:transform}
+#ring.big{width:40px;height:40px;margin:-10px 0 0 -10px;background:rgba(167,139,250,.14);border-color:rgba(92,200,255,.8)}
 body.moved #glow,body.moved #ring{opacity:1}
 #toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,30px);padding:12px 20px;border-radius:999px;background:rgba(20,12,44,.95);border:1px solid rgba(167,139,250,.5);font-size:.9rem;opacity:0;pointer-events:none;transition:.35s;z-index:400}
 #toast.show{opacity:1;transform:translate(-50%,0)}
