@@ -23,11 +23,12 @@
 
   /* counters */
   function runCount(el){
+    var dec=+el.dataset.dec||0,pre=el.dataset.prefix||'',suf=el.dataset.suffix||'';
     var target=el.dataset.since?Math.floor((Date.now()-new Date(el.dataset.since+'-01').getTime())/31557600000):+el.dataset.count;
-    var suf=el.dataset.suffix||'';
-    if(reduce){el.textContent=target+suf;return}
+    var fmt=function(v){return pre+(dec?v.toFixed(dec):Math.round(v))+suf};
+    if(reduce){el.textContent=fmt(target);return}
     var t0=null;
-    (function step(t){t0=t0||t;var p=Math.min(1,(t-t0)/1500),e=1-Math.pow(1-p,3);el.textContent=Math.round(target*e)+suf;if(p<1)requestAnimationFrame(step)})(performance.now());
+    (function step(t){t0=t0||t;var p=Math.min(1,(t-t0)/1500),e=1-Math.pow(1-p,3);el.textContent=fmt(target*e);if(p<1)requestAnimationFrame(step)})(performance.now());
   }
   var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){runCount(e.target);co.unobserve(e.target)}})},{threshold:.5});
   $$('[data-count],[data-since]').forEach(function(el){co.observe(el)});
