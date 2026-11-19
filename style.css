@@ -328,3 +328,19 @@ nav .brand img{flex:none}
 /* hero core = brand mark */
 .orbit .core{background:radial-gradient(circle at 50% 38%,#33206f,#0f0a2b 72%);border:1.5px solid rgba(167,139,250,.55);box-shadow:0 0 70px rgba(167,139,250,.5),inset 0 0 36px rgba(167,139,250,.28);padding:0}
 .orbit .core svg{width:100%;height:100%;display:block;filter:drop-shadow(0 4px 14px rgba(167,139,250,.45))}
+
+/* resume update */
+.v5{--c1:#a078ff;--c2:#ff7ab8}
+.b-glance{grid-column:span 2;grid-row:span 2;display:flex;flex-direction:column;min-height:380px}
+.b-glance dl{margin:18px 0 0;display:grid;gap:14px}
+.b-glance dl div{padding-bottom:14px;border-bottom:1px solid var(--line)}
+.b-glance dt{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.b-glance dd{margin:0;font-weight:600}
+.glinks{margin-top:auto;padding-top:14px;display:flex;flex-wrap:wrap;gap:6px 22px}
+.glinks .more{margin-top:0}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.skills .card{display:flex;flex-direction:column}
+.skills .chips{margin-top:12px}
+.pc-body h3 small{display:block;margin-top:4px}
+@media(max-width:1000px){.b-glance{grid-column:span 2;grid-row:auto;min-height:0}.skills{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.b-glance{grid-column:auto}.skills{grid-template-columns:1fr}}
