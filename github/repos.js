@@ -1,13 +1,14 @@
 (function(){
   var USER='Vyshnav161';
+  var HIDE=['calltracker-web'];
+  var DESC={trackpad:'Use an Android phone as a wireless trackpad and keyboard for a Mac or Windows computer (Flutter app and .NET desktop agent).'};
   /* snapshot used only if the GitHub API is unavailable or rate limited */
   var FALLBACK=[
     {name:'vm_machine',description:'Run Linux/Windows virtual machines on Android with QEMU (Flutter app)',language:'Dart',stargazers_count:0,pushed_at:'2026-11-24T08:45:29Z'},
-    {name:'trackpad',description:null,language:'Dart',stargazers_count:0,pushed_at:'2026-11-25T07:39:11Z'},
+    {name:'trackpad',description:'Use an Android phone as a wireless trackpad and keyboard for a Mac or Windows computer (Flutter app and .NET desktop agent).',language:'Dart',stargazers_count:0,pushed_at:'2026-11-25T07:39:11Z'},
     {name:'vyra-nexus',description:'A private, cross-platform, offline-first AI assistant built with Flutter. Run local AI models, have voice conversations, manage models, benchmark device performance, and automate tasks while keeping your data on-device.',language:null,stargazers_count:0,pushed_at:'2026-11-03T05:27:38Z'},
     {name:'Whatsapp_zip_reader',description:'View and explore WhatsApp chat exports (ZIP) with messages and media in a familiar WhatsApp-like UI.',language:'Dart',stargazers_count:4,pushed_at:'2026-11-18T06:57:18Z',homepage:'/wzipchat/'},
-    {name:'Vyshnav161.github.io',description:null,language:'HTML',stargazers_count:0,pushed_at:'2026-11-19T07:04:52Z'},
-    {name:'calltracker-web',description:null,language:'HTML',stargazers_count:0,pushed_at:'2025-10-01T15:26:27Z'}
+    {name:'Vyshnav161.github.io',description:null,language:'HTML',stargazers_count:0,pushed_at:'2026-11-19T07:04:52Z'}
   ];
   var grid=document.getElementById('gh-grid'),q=document.getElementById('gh-q'),langBox=document.getElementById('gh-langs');
   var repos=[],lang='';
@@ -52,7 +53,8 @@
     });
   }
   function use(data,live){
-    repos=data.map(function(r){
+    repos=data.filter(function(r){return HIDE.indexOf(r.name)<0}).map(function(r){
+      if(!r.description&&DESC[r.name])r.description=DESC[r.name];
       r.html_url=r.html_url||'https://github.com/'+USER+'/'+r.name;return r;
     }).sort(function(a,b){return new Date(b.pushed_at)-new Date(a.pushed_at)});
     langs();render();
